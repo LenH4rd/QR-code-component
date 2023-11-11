@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --Lightgray: hsl(212, 45%, 89%);
+    --Grayishblue: hsl(220, 15%, 55%);
+    --Darkblue: hsl(218, 44%, 22%);
+
+    --fs-paragraph: 0.9375rem;
+
+    --ff-default: 'Outfit', sans-serif;
+
+    --fw-400: 400;
+    --fw-700: 700;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: auto;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: hidden;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+
+body {
+    background-color: var(--Lightgray);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-family: var(--ff-default);
+    font-size: var(--fs-paragraph);
+}
+
+main {
+    background-color: var(--white);
+    height: 497px;
+    width: 320px;
+    padding: 16px;
+    border-radius: 20px;
+    max-width: 100%;
+}
+
+.qr-code {
+    height: 288px;
+    width: 288px;
+    margin: 0 0 22px 0;
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+h2 {
+    font-weight: var(--fw-700);
+    color: var(--Darkblue);
+    margin: 0 0 16px 0;
+}
+
+p {
+    font-weight: var(--fw-400);
+    color: var(--Grayishblue);
+    padding: 0 22px;
+}
